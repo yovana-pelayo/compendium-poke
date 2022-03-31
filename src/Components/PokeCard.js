@@ -1,13 +1,12 @@
-export default function PokeCard({ pokemon, type_1, defense, special_attack, url_image }) {
+export default function PokeCard({ pokemon, type_1, defense, attack, url_image }) {
+  console.log(pokemon);
   return (
-    <>
-      <div className="poke-card">
-        <h2>{pokemon}</h2>
-        <img src={url_image} />
-        <p>Type: {type_1}</p>
-        <p>Defense: {defense}</p>
-        <p>Special Attack: {special_attack}</p>
-      </div>
-    </>
+    <div className="poke-card">
+      <h2>{pokemon}</h2>
+      <img src={url_image} />
+      <p>Type: {type_1}</p>
+      <p>Defense: {defense}</p>
+      <p>Special Attack: {attack}</p>
+    </div>
   );
 }
