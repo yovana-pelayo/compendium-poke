@@ -1,5 +1,4 @@
 export default function PokeCard({ pokemon, type_1, defense, attack, url_image }) {
-  console.log(pokemon);
   return (
     <div className="poke-card">
       <h2>{pokemon}</h2>
